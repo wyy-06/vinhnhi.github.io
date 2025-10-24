@@ -1,0 +1,17 @@
+<section id="projects">
+  <h2>projects.</h2>
+  <div class="project-gallery">
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Street_art_heart.jpg" alt="Project 01">
+      <p>Project. 01</p>
+    </div>
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Street_art_chair.jpg" alt="Project 02">
+      <p>Project. 02</p>
+    </div>
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kobra_mural_NYC.jpg" alt="Project 03">
+      <p>Project. 03</p>
+    </div>
+  </div>
+</section>

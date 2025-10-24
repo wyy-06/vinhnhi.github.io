@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Vong Vinh Nhi</h1>
+    <p>Hello! I’m a second year student at Fulbright University Vietnam.</p>
+    <img src="your-photo.jpg" alt="Your Photo" width="150" />
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m passionate about coding, design, and technology. My skills include HTML, CSS, JavaScript, and Fusion 360.
+    </p>
+    <ul>
+      <li><strong>Education:</strong> Fulbright University Vietnam</li>
+      <li><strong>Hobbies:</strong> Coding, drawing, building 3D models</li>
+    </ul>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="projects">
+  <h2>projects.</h2>
+  <div class="project-gallery">
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Street_art_heart.jpg" alt="Project 01">
+      <p>Project. 01</p>
+    </div>
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Street_art_chair.jpg" alt="Project 02">
+      <p>Project. 02</p>
+    </div>
+    <div class="project-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kobra_mural_NYC.jpg" alt="Project 03">
+      <p>Project. 03</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label>Name:</label><br>
+      <input type="text" id="name" required><br>
+      <label>Email:</label><br>
+      <input type="email" id="email" required><br>
+      <label>Message:</label><br>
+      <textarea id="message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Notebook Section -->
+  <section id="notebook">
+    <h2>Notebook</h2>
+    <input type="text" id="noteInput" placeholder="Write a new note..." />
+    <button id="addNoteBtn">Add Note</button>
+    <ul id="notesList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
