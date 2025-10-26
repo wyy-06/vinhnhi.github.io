@@ -1,17 +1,119 @@
-<section id="projects">
-  <h2>projects.</h2>
-  <div class="project-gallery">
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Street_art_heart.jpg" alt="Project 01">
-      <p>Project. 01</p>
-    </div>
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Street_art_chair.jpg" alt="Project 02">
-      <p>Project. 02</p>
-    </div>
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kobra_mural_NYC.jpg" alt="Project 03">
-      <p>Project. 03</p>
-    </div>
-  </div>
-</section>
+/* --- ABOUT SECTION --- */
+.about {
+  background-color: #f9f8fc; /* soft lavender-white */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.about-box h3 {
+  color: #5c4b8a; /* soft purple accent */
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* --- PORTFOLIO SECTION --- */
+.portfolio {
+  background-color: #f2f7ff; /* pale blue */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.project {
+  display: inline-block;
+  margin: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project p {
+  padding: 15px;
+  color: #444;
+  font-size: 1em;
+}
+
+/* --- CONTACT SECTION --- */
+.contact {
+  background-color: #faf0f5; /* soft pink */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #b7a4e0; /* pastel purple button */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #9a85d6;
+}
