@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Personal Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>Vong Vinh Nhi</h1>
-    <p>Hello! I’m a second year student at Fulbright University Vietnam.</p>
-    <img src="your-photo.jpg" alt="Your Photo" width="150" />
-  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cbr.com%2Fbakugo-best-mha-character%2F&psig=AOvVaw0YMRW3XbSm1Ip7USyJZ9Qs&ust=1761543108423000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNDehtGRwZADFQAAAAAdAAAAABAE">
+    <div class="hero-text">
+      <h1>Welcome!</h1>
+      <p>This is my personal website for Assignment 2</p>
+    </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m passionate about coding, design, and technology. My skills include HTML, CSS, JavaScript, and Fusion 360.
-    </p>
-    <ul>
-      <li><strong>Education:</strong> Fulbright University Vietnam</li>
-      <li><strong>Hobbies:</strong> Coding, drawing, building 3D models</li>
-    </ul>
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>Hello! I’m Vinh Nhi, a student in class Computer Science of Thay Dang in Fulbright University Vietnam.
+       This site is my creative space where I share about my skills, hobbies, and projects.</p>
+    <h3>Background</h3>
+    <p>I’m passionate about designing creative stuffs and sketching. I also enjoy challenges that make me stand out of my comfort zone and explore new things</p>
+      </div>
+      <div class="about-item">
+        <h3>Education</h3>
+        <p>Major in Art and Media at Fulbright University Vietnam.  
+        Because I need a space where I can indulge in my passion .</p>
+      </div>
+      <div class="about-item">
+        <h3>Skills</h3>
+        <ul>
+          <li>Edit Video (Capcut, Premiere), JS)</li>
+          <li>Web, Poster Design (Canva, HTML,..)</li>
+          <li>Team Collaboration</li>
+          <li>Procifent in Microsolf Excel, Word, PowerPoint</li>
+        </ul>
+      </div>
+      <div class="about-item">
+        <h3>Hobbies</h3>
+        <p> I love drawing, watching K-Drama, and gossiping with my friends</p>
+      </div>
+    </div>
   </section>
 
   <!-- Portfolio Section -->
-  <section id="projects">
-  <h2>projects.</h2>
-  <div class="project-gallery">
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Street_art_heart.jpg" alt="Project 01">
-      <p>Project. 01</p>
+  <section id="portfolio" class="portfolio">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://www.google.com/imgres?q=tank&imgurl=https%3A%2F%2Fwww.19fortyfive.com%2Fwp-content%2Fuploads%2F2025%2F01%2FM1-Abrams-Tank-U.S.-Army.jpg&imgrefurl=https%3A%2F%2Fwww.19fortyfive.com%2F2025%2F02%2Franked-the-5-best-tanks-in-all-of-military-history%2F&docid=rQ5LAbnmp035pM&tbnid=nBDsRDImS64I3M&vet=12ahUKEwi9keTnlMGQAxUn4zgGHSdoGoEQM3oECBMQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwi9keTnlMGQAxUn4zgGHSdoGoEQM3oECBMQAA" alt="Project 1">
+        <h3>Project</h3>
+        <p>A tank model in my Design System Thinking class.</p>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>A Research on a social problem and create a material for probelm-solving .</p>
+      </div>
     </div>
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Street_art_chair.jpg" alt="Project 02">
-      <p>Project. 02</p>
-    </div>
-    <div class="project-item">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Kobra_mural_NYC.jpg" alt="Project 03">
-      <p>Project. 03</p>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <form id="contactForm">
-      <label>Name:</label><br>
-      <input type="text" id="name" required><br>
-      <label>Email:</label><br>
-      <input type="email" id="email" required><br>
-      <label>Message:</label><br>
-      <textarea id="message" required></textarea><br>
+    <p>send me a message!</p>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/yourprofile">@yourprofile</a></p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
-
-  <!-- Notebook Section -->
-  <section id="notebook">
-    <h2>Notebook</h2>
-    <input type="text" id="noteInput" placeholder="Write a new note..." />
-    <button id="addNoteBtn">Add Note</button>
-    <ul id="notesList"></ul>
-  </section>
-
-  <script src="script.js"></script>
 </body>
 </html>
