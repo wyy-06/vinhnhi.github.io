@@ -1,3 +1,9 @@
+.momo-trust-display-regular {
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* --- ABOUT SECTION --- */
 .about {
   background-color: #f9f8fc; /* soft lavender-white */
