@@ -1,79 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinh Nhi - Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    img {
-      width: 300px;
-      border-radius: 10px;
-      display: block;
-      margin: 30px auto;
-    }
-
-    section {
-      max-width: 800px;
-      margin: auto;
-      text-align: left;
-    }
-
-    h1, h2 {
-      text-align: center;
-    }
-  </style>
+  <title>Vinh Nhi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/11/My-Hero-Academia-Bakugo-Smiling.jpg" alt="Profile Photo">
-
-  <h1>Welcome!</h1>
-  <p>This is my personal website for Assignment 2</p>
-
-  <section>
-    <h2>About me</h2>
-    <p>Hello! I’m Vinh Nhi, a student in class Computer Science of Thay Dang in Fulbright University Vietnam. This site is my creative space where I share about my skills, hobbies, and projects.</p>
-
-    <h3>Background</h3>
-    <p>I’m passionate about designing creative stuff and sketching. I also enjoy challenges that make me stand out of my comfort zone and explore new things.</p>
-
-    <h3>Education</h3>
-    <p>Major in Art and Media at Fulbright University Vietnam. Because I need a space where I can indulge in my passion.</p>
-
-    <h3>Skills</h3>
-    <ul>
-      <li>Edit Video (Capcut, Premiere, JS)</li>
-      <li>Web, Poster Design (Canva, HTML,..)</li>
-      <li>Team Collaboration</li>
-      <li>Proficient in Microsoft Excel, Word, PowerPoint</li>
-    </ul>
-
-    <h3>Hobbies</h3>
-    <p>I love drawing, watching K-Drama, and gossiping with my friends.</p>
-
-    <h2>Projects</h2>
-    <img src="your-project-image1.jpg" alt="Project 1" width="300">
-    <p>Project 1</p>
-
-    <h2>Contact</h2>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" style="width:100%;"><br><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" style="width:100%;"><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" style="width:100%;"></textarea><br><br>
-      <input type="submit" value="Send">
-    </form>
+  <!-- Hero Section -->
+  <section id="hero">
+    <img src="images/profile.jpg" alt="Profile Photo">
+    <h1>Hi, I'm Vinh Nhi</h1>
+    <p>THIS IS MY PERSONAL WEBSITE FOR MY ASSIGNMENT 2 IN CLASS COMPUTER SCIENCE OF THẦY ĐĂNG (HE IS REALLY NICE THO!) ^^/p>
   </section>
 
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m passionate about designing creative stuff, sketching, photographing and exploring new ideas that take me out of my comfort zone.</p>
+    <div class="info-grid">
+      <div>
+        <h3>Background</h3>
+        <p>This is my second year at Fulbright University as a Art and Media Students </p>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul>
+          <li>Video Editing (CapCut, Premiere)</li>
+          <li>Design (Canva, HTML)</li>
+          <li>Photographing, Sketching</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hobbies</h3>
+        <p>Drawing, watching K-Dramas, and sleeping</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Create a tank in DST class and win 1st race </p>
+      </div>
+      <div class="project">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Problem Solving and Creating a Mask Dispenser</p>
+      </div>
+    </div>
+  </section>
+<section id="photos" class="photo-gallery">
+  <h2>Some of my best pictures</h2>
+  <p class="intro">
+    Fun fact: besides my passion for creating, I also love traveling and capturing the world through my lens.
+    Here are some of my favorite shots:
+  </p>
+
+  <div class="grid-container">
+    <div class="img-item">
+      <img src="images/photo1.jpg" alt="Palm trees by the sea">
+      <p><em>Morning light over a quiet beach</em></p>
+    </div>
+    <div class="img-item">
+      <img src="images/photo2.jpg" alt="Mountain landscape">
+      <p><em>Silence of the mountains</em></p>
+    </div>
+    <div class="img-item">
+      <img src="images/photo3.jpg" alt="Rock arch in desert">
+      <p><em>Arch of time, carved by nature</em></p>
+    </div>
+    <div class="img-item">
+      <img src="images/photo4.jpg" alt="Colorful window and vines">
+      <p><em>Colors of autumn</em></p>
+    </div>
+    <div class="img-item">
+      <img src="images/photo5.jpg" alt="Cliff by the ocean">
+      <p><em>Golden hour over the cliffs</em></p>
+    </div>
+  </div>
+  <div class="more-btn">
+    <a href="https://www.instagram.com/_wyongyi/"class="btn">More on my Instagram</a>
+  </div>
+</section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 </body>
 </html>
