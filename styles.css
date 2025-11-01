@@ -132,4 +132,65 @@ h1{
   font-style: italic;
   font-size: 1em;
 }
+/* --- ABOUT SECTION --- */
+.about {
+  background-color: #fff9f9;
+  padding: 60px 20px;
+}
+
+/* layout for image + text in one horizontal line */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 2.5em;
+  flex-wrap: nowrap;
+}
+
+/* make the about image round and small */
+.about-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;       /* makes it circular */
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* limit text width */
+.text-container {
+  max-width: 480px;
+}
+
+/* center headings */
+h1, h2, h3, h4 {
+  text-align: center;
+}
+.about-img {
+    margin-bottom: 20px;
+  }
+}
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #b7a4e0, #f3c6d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #b7a4e0, #f3c6d8);
+}
 
