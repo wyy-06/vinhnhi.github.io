@@ -34,44 +34,44 @@ h1{
   margin:.75em 0 1em 0;
   font-size: 1.25rem;
 }
-/* Each project box */
-project img{
-width: 180px;          
-  height: 180px;
-  border-radius: 50%;    
-  object-fit: cover;     
-  object-position: center;
-  flex-shrink: 0;
-}
+/* --- PROJECT --- */
 .project {
   background: #ffffff;
-  border-radius: 16px;
+  border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 300px;
+  width: 250px;            
+  text-align: center;     
+  padding: 20px 10px;
 }
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Image inside each project */
+/* --- CIRCULAR IMAGES INSIDE EACH PROJECT --- */
 .project img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #eee;
+  width: 180px;          
+  height: 180px;
+  border-radius: 50%;    
+  object-fit: cover;     
+  object-position: center;
+  margin: 0 auto 15px auto; /* centers the image inside the card */
+  display: block;
 }
 
-/* Project text below image */
+/* --- TEXT BELOW IMAGE --- */
 .project p {
-  padding: 15px;
+  padding: 0 15px;
   color: #555;
   font-size: 1em;
+  line-height: 1.5;
   text-align: center;
+  font-style: italic;
 }
+
 /* --- PHOTO GALLERY SECTION --- */
 .photo-gallery {
   background-color: #fff9f9; /* soft warm background */
@@ -132,49 +132,4 @@ width: 180px;
   font-style: italic;
   font-size: 1em;
 }
-/* --- CONTACT SECTION --- */
-.contact {
-  background-color: #faf0f5; /* soft pink */
-  padding: 80px 20px;
-  text-align: center;
-}
 
-.contact h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: stretch;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-.contact-form button {
-  background-color: #b7a4e0; /* pastel purple button */
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #9a85d6;
-}
